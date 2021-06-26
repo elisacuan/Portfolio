@@ -136,10 +136,13 @@ h1{
 
 .myWork h4{
   font-family: 'Roboto Slab', serif;
-  font-size: 28px;
-  margin: 5px;
+  font-size: 25px;
   padding: 5px;
-  text-align: center;
+  padding-top: 10px;
+  text-align: left;
+  width: 450px;
+  height: 40px;
+  margin: 5px;
 }
 
 .myWork p{
@@ -147,7 +150,10 @@ h1{
   font-size: 16px;
   padding: 20px;
   margin: 5px;
-  text-align: center;
+  text-align: left;
+  width: 450px;
+  height: 40px;
+
 }
 
 .myworktitle{
@@ -191,6 +197,7 @@ h1{
 }
 
 .myWork img{
+  padding-top: 10px;
   width: 469px;
   height: 406px;
   object-fit: fill;
