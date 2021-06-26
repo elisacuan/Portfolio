@@ -1,0 +1,197 @@
+
+
+
+
+/*Nav Bar*/
+.navigation
+{
+display: flex;
+flex-flow: row;
+padding: 0px;
+justify-content: flex-end;
+height:fit-content;
+}
+
+.navigation a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: 'Sen', sans-serif;
+  font-size: 16px;
+  width: 100px;  
+  height: 100px; 
+  text-decoration: none;
+  color: black;
+}
+
+.decorated {
+  background-color: #C5F9EC;
+}
+
+.navigation div{
+  flex-grow: 1;
+  background-color: white;
+}
+
+/*Body*/
+
+.hero{
+  padding: 200px;
+  border:transparent;
+  margin: auto;
+}
+
+h1{
+  font-family: 'Roboto Slab', serif;
+  font-size: 62px;
+  line-height: 82px;
+  text-align: center;
+}
+
+.hero p{
+ font-family: 'Sen', sans-serif;
+ font-size: 20px;
+  text-align: center;
+}
+
+.divider{
+    background-color:  #000000;
+    padding: 3px;
+    margin: 10px;
+}
+
+/*Skillset*/
+.skills{
+  display: grid;
+  width: 1440px;
+  border: 15px;
+  padding: 50px;
+  margin: auto;
+  grid-template-columns: 50px, 50px;
+  grid-template-rows: auto;
+  grid-template-areas: "intro intro" 
+  "productdesign visualdesign";
+}
+
+.skills h2{
+  font-family: 'Roboto Slab', serif;
+  font-size: 55px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.skills h3{
+  font-family: 'Sen', sans-serif;
+  font-size: 24px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.skills p{
+  font-family: 'Sen', sans-serif;
+  font-size: 16px;
+  padding: 20px;
+}
+
+.skills img{
+  width: 7%;
+  height: auto;
+  padding-left: 20px;
+}
+
+.intro{
+  grid-area: intro;
+}
+
+.productdesign{
+  grid-area: productdesign;
+}
+
+.visualdesign{
+  grid-area: visualdesign;
+}
+
+/*My Work*/
+
+.myWork{
+  display: grid;
+  width: 1440px;
+  border: 15px;
+  padding: 50px;
+  margin: auto;
+  align-content: center;
+  justify-items: center;
+  grid-template-columns: 50px, 50px;
+  grid-template-rows: auto;  
+  grid-template-areas: "myworktitle ."
+  "work1 work2"
+  "work3 .";
+}
+
+.myWork h2{
+  font-family: 'Roboto Slab', serif;
+  font-size: 55px;
+  padding-left: 20px;
+}
+
+.myWork h4{
+  font-family: 'Roboto Slab', serif;
+  font-size: 28px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
+}
+
+.myWork p{
+  font-family: 'Sen', sans-serif;
+  font-size: 16px;
+  padding: 20px;
+  margin: 5px;
+  text-align: center;
+}
+
+.myworktitle{
+  display: grid;
+  grid-area: myworktitle;
+  justify-self: flex-start;  
+}
+
+.work1{
+  display: grid;
+  grid-area: work1;
+  border: 5px solid black;
+  padding: 20px;
+  margin: 40px;
+}
+
+.work2{
+  display: grid;
+  grid-area: work2;
+  border: 5px solid black;
+  padding: 20px;
+  margin: 40px;
+ 
+}
+
+.work3{
+  display: grid;
+  grid-area: work3;
+  border: 5px solid black;
+  padding: 20px;
+  margin: 40px;
+
+}
+
+.workitem{
+  display: grid;
+  max-width: 500px;
+  align-items: center;
+  justify-items: center;
+
+}
+
+.myWork img{
+  width: 469px;
+  height: 406px;
+  object-fit: fill;
+}
