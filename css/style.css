@@ -202,3 +202,8 @@ h1{
   height: 406px;
   object-fit: fill;
 }
+
+/*Footer*/
+.footer{
+  background-color: rgb(170, 209, 194);
+}
