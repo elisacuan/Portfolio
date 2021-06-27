@@ -22,6 +22,8 @@ height:fit-content;
   height: 100px; 
   text-decoration: none;
   color: black;
+  margin: 0px;
+  cursor: pointer;
 }
 
 .decorated {
@@ -36,8 +38,8 @@ height:fit-content;
 /*Body*/
 
 .hero{
-  display: grid;
   width: 1440px;
+  height: 500px;
   border: 15px;
   padding: 200px;
   margin: auto;
@@ -49,12 +51,15 @@ h1{
   font-size: 62px;
   line-height: 82px;
   text-align: center;
+  margin: 0px auto;
 }
 
 .hero p{
  font-family: 'Sen', sans-serif;
- font-size: 20px;
-  text-align: center;
+ font-size: 24px;
+ text-align: center;
+ margin: 0px auto;
+
 }
 
 .divider{
@@ -123,14 +128,13 @@ h1{
   border: 15px;
   padding: 200px;
   margin: auto;
-  border-bottom: 5px solid black;
   align-content: center;
   justify-items: center;
   grid-template-columns: 50px, 50px;
   grid-template-rows: auto;  
   grid-template-areas: "myworktitle ."
   "work1 work2"
-  "work3 .";
+  "work3 work4";
 }
 
 .myWork h2{
@@ -170,15 +174,18 @@ h1{
 .work1{
   display: grid;
   grid-area: work1;
-  border: 5px solid black;
+  border: 5px solid hsl(231, 70%, 81%);
   padding: 20px;
   margin: 40px;
+  background-color: hsl(231, 70%, 81%);
+  border-radius: 10px;
 }
 
 .work2{
   display: grid;
   grid-area: work2;
   border: 5px solid black;
+  border-radius: 10px;
   padding: 20px;
   margin: 40px;
  
@@ -190,6 +197,18 @@ h1{
   border: 5px solid black;
   padding: 20px;
   margin: 40px;
+  border-radius: 10px;
+
+}
+
+.work4{
+  display: grid;
+  grid-area: work4;
+  border: 5px solid rgb(238, 238, 181);
+  background-color:rgb(238, 238, 181);
+  border-radius: 10px;
+  padding: 20px;
+  margin: 40px;
 
 }
 
@@ -198,17 +217,43 @@ h1{
   max-width: 500px;
   align-items: center;
   justify-items: center;
+  cursor: pointer;
 
 }
 
-.myWork img{
+.logoimage{
   padding-top: 10px;
-  width: 469px;
-  height: 406px;
+  width:500px;
+  height: 300px;
+}
+
+
+.mobileimg{
+  padding-top: 20px;
+  width: 380px;
+  height: 350px;
   object-fit: fill;
+}
+
+.mobileimg2{
+  padding-top: 20px;
+  width: 250px;
+  height: 440px;
 }
 
 /*Footer*/
 .footer{
-  background-color: rgb(170, 209, 194);
+  display: flex;
+  background-color: black;
+  width: auto;
+  height: 400px;
+  justify-content: center;
+  align-items: flex-end;
+}
+
+.footer p{
+  font-family: 'Sen', sans-serif;
+  font-size: 15px;
+  color: aliceblue;
+  align-items: center;
 }
