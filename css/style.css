@@ -27,10 +27,11 @@ height:fit-content;
   color: black;
   margin: 0px;
   cursor: pointer;
+
 }
 
 .decorated {
-  background-color: #C5F9EC;
+  font-weight: bold;
 }
 
 .navigation div{
@@ -38,12 +39,29 @@ height:fit-content;
   background-color: white;
 }
 
-@media (max-width:720px){
-  .navigation a {
-    flex-shrink: 1;
+/* Medium screens */
+@media all and (max-width: 800px) {
+  .navigation {
+    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+    justify-content: space-around;
   }
-  
+  .footer {
+    
+  }
 }
+
+/* Small screens */
+@media all and (max-width: 500px) {
+  .navigation {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+  .footer {
+
+  }
+}
+  
+
 /*Body*/
 
 .hero{
@@ -53,6 +71,11 @@ height:fit-content;
   padding: 200px;
   margin: auto;
   border-bottom: 5px solid black ;
+}
+.hero u{
+  background-color: rgb(55, 0, 252);
+  color: white;
+  text-decoration: none;
 }
 
 h1{
@@ -272,21 +295,57 @@ h1{
   width: 222px;
   height: 47px;
   font-variant-caps: normal;
+  cursor: pointer;
 }
 
 /*Footer*/
 .footer{
-  display: flex;
+  display: grid;
   background-color: black;
   width: auto;
-  height: 200px;
-  justify-content: center;
-  align-items: flex-end;
+  height: 300px;
+  align-content: center;
+  justify-items: center;
+  
 }
 
 .footer p{
   font-family: 'Sen', sans-serif;
   font-size: 15px;
   color: aliceblue;
-  align-items: center;
+}
+
+/* Style all font awesome icons */
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+  color:white;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+footer .button {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: rgb(55, 0, 252);;
+  border: black;
+  color: white;
+  font-family: 'Sen', sans-serif;
+  border: 5px solid #000000;
+  border-radius: 20px;
+  padding: 8px 40px;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  font-size: 16px;
+  width: 222px;
+  height: 47px;
+  font-variant-caps: normal;
+  cursor: pointer;
 }
