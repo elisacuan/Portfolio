@@ -4,15 +4,8 @@ body{
   height: 100vh;
 
 }
-/*Mobile Menu*/
-.menu{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-items: center;
-}
+/*Nav Bar*/ 
 
-/*Nav Bar*/
 .navigation
 {
 display: flex;
@@ -45,6 +38,12 @@ height:fit-content;
   background-color: white;
 }
 
+@media (max-width:720px){
+  .navigation a {
+    flex-shrink: 1;
+  }
+  
+}
 /*Body*/
 
 .hero{
@@ -280,7 +279,7 @@ h1{
   display: flex;
   background-color: black;
   width: auto;
-  height: 400px;
+  height: 200px;
   justify-content: center;
   align-items: flex-end;
 }
