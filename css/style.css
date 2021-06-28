@@ -309,11 +309,12 @@ h1{
   font-family: 'Sen', sans-serif;
   font-size: 15px;
   color: aliceblue;
+  padding-top: 40px;
 }
 
 /* Style all font awesome icons */
 .fa {
-  padding: 20px;
+  padding: 5px;
   font-size: 30px;
   width: 50px;
   text-align: center;
