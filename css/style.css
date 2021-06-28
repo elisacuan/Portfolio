@@ -1,6 +1,16 @@
 
+body{
+  display: grid;
+  height: 100vh;
 
-
+}
+/*Mobile Menu*/
+.menu{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
 
 /*Nav Bar*/
 .navigation
@@ -38,7 +48,7 @@ height:fit-content;
 /*Body*/
 
 .hero{
-  width: 1440px;
+  width: 1400px;
   height: 500px;
   border: 15px;
   padding: 200px;
@@ -130,11 +140,12 @@ h1{
   margin: auto;
   align-content: center;
   justify-items: center;
-  grid-template-columns: 50px, 50px;
+  grid-template-columns: 50% 50%;
   grid-template-rows: auto;  
-  grid-template-areas: "myworktitle ."
-  "work1 work2"
-  "work3 work4";
+  grid-template-areas: "myworktitle myworktitle"
+  "work2 work2desc"
+  "work3 work3desc"
+  "work4 work4desc";
 }
 
 .myWork h2{
@@ -145,20 +156,16 @@ h1{
 
 .myWork h4{
   font-family: 'Roboto Slab', serif;
-  font-size: 30px;
-  padding: 10px;
+  font-size: 35px;
   padding-top: 10px;
   text-align: left;
   width: 450px;
   height: 50px;
-  margin: 5px;
 }
 
 .myWork p{
   font-family: 'Sen', sans-serif;
   font-size: 24px;
-  padding: 20px;
-  margin: 5px;
   text-align: left;
   width: 450px;
   height: 100px;
@@ -171,74 +178,101 @@ h1{
   justify-self: flex-start;  
 }
 
-.work1{
-  display: grid;
+/*.work1{
   grid-area: work1;
-  border: 5px solid hsl(231, 70%, 81%);
   padding: 20px;
   margin: 40px;
-  background-color: hsl(231, 70%, 81%);
-  border-radius: 10px;
 }
+
+.work1desc{
+  display: grid;
+  grid-area: work1desc;
+  padding: 20px;
+  margin: 40px;
+  align-items:flex-start;
+  justify-content: center;
+
+}*/
 
 .work2{
-  display: grid;
   grid-area: work2;
-  border: 5px solid black;
-  border-radius: 10px;
   padding: 20px;
   margin: 40px;
- 
 }
 
-.work3{
+.work2desc{
   display: grid;
-  grid-area: work3;
-  border: 5px solid black;
+  grid-area: work2desc;
   padding: 20px;
   margin: 40px;
-  border-radius: 10px;
+  align-items:flex-start;
+  justify-content: center;
+
+}
+.work3{
+  grid-area: work3;
+  padding: 20px;
+  margin: 40px;
+
+}
+
+.work3desc{
+  display: grid;
+  grid-area: work3desc;
+  padding: 20px;
+  margin: 40px;
+  align-items:flex-start;
+  justify-content: center;
 
 }
 
 .work4{
   display: grid;
   grid-area: work4;
-  border: 5px solid rgb(238, 238, 181);
-  background-color:rgb(238, 238, 181);
-  border-radius: 10px;
   padding: 20px;
   margin: 40px;
 
 }
 
-.workitem{
+.work4desc{
   display: grid;
-  max-width: 500px;
-  align-items: center;
-  justify-items: center;
-  cursor: pointer;
+  grid-area: work4desc;
+  padding: 20px;
+  margin: 40px;
+  align-items:flex-start;
+  justify-content: center;
 
 }
 
-.logoimage{
+.webimage{
   padding-top: 10px;
-  width:500px;
-  height: 300px;
+  width:600px;
+  height: 370px;
 }
-
 
 .mobileimg{
   padding-top: 20px;
-  width: 380px;
-  height: 350px;
-  object-fit: fill;
+  height: 370px;
+  margin: auto;
 }
 
-.mobileimg2{
-  padding-top: 20px;
-  width: 250px;
-  height: 440px;
+.button {
+  box-sizing: border-box;
+  display: inline-block;
+  background-color: white;
+  border: black;
+  color: black;
+  font-family: 'Sen', sans-serif;
+  border: 5px solid #000000;
+  border-radius: 20px;
+  padding: 8px 38px;
+  text-align: center;
+  margin: auto;
+  text-decoration: none;
+  font-size: 16px;
+  width: 222px;
+  height: 47px;
+  font-variant-caps: normal;
 }
 
 /*Footer*/
