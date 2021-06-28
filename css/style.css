@@ -1,14 +1,9 @@
 
-body{
-  display: grid;
-  height: 100vh;
 
-}
 /*Nav Bar*/ 
 
 .navigation
 {
-width: 1400px;
 display: flex;
 flex-flow: row;
 padding: 0px;
