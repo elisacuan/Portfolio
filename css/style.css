@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 body{
   display: grid;
   grid-template-columns: 1fr;
@@ -11,6 +15,7 @@ body{
 
 .header{
   grid-area: header;
+ 
 }
 .hero{
   grid-area: hero;
@@ -26,28 +31,36 @@ body{
   grid-area: footer;
 }
 
-/*Nav Bar*/ 
+/*Nav Bar*/
 
 .navigation 
 {
   display: flex;
   flex-flow: row;
   padding: 0px;
-  justify-content: flex-end;
+  justify-content:space-between;
   height:fit-content;
+  flex-wrap: wrap;
 }
 
-.navigation a {
+.navwrap{
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.navbutton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
   font-family: 'Sen', sans-serif;
   font-size: 16px;
   width: 100px;  
   height: 100px; 
   text-decoration: none;
   color: black;
-  margin: 0px;
   cursor: pointer;
 }
 
@@ -56,11 +69,6 @@ body{
   background-color: rgb(230, 230, 46);
 }
 
-.navigation div{
-  flex-grow: 1;
-  background-color: white;
-}
-  
 
 /*Body*/
 
