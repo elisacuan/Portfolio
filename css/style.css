@@ -19,10 +19,7 @@ body{
 .hero{
   grid-area: hero;
 }
-.skills
-{
-  grid-area: skills;
-}
+
 .myWork{
   grid-area: myWork;
 }
@@ -109,11 +106,11 @@ h1{
 
 /*Skillset*/
 .skills{
+  grid-area: skills;
   display: grid;
   width: 1440px;
   height: 900px;
   border: 15px;
-  padding: 50px;
   border-bottom: 5px solid black;
   margin: auto;
   grid-template-columns: 50px, 50px;
@@ -357,10 +354,10 @@ footer .button:hover{
   
 }
 
-/* Medium screens 
+/* Medium screens */
 @media only screen and (max-width: 1000px) {
   .navigation {
-    justify-content: space-around;
+    
   }
   .footer {
     
