@@ -65,7 +65,7 @@ body{
 
 .decorated {
   font-weight: bold;
-  background-color: rgb(114, 230, 139);
+  background-color: #C5F9EC;
 }
 
 
@@ -307,11 +307,10 @@ h1{
   cursor: pointer;
 }
 
-.button:hover{
-  opacity: 0.7;
-  background-color: rgb(55, 0, 252);
-  color: white;
-  border: solid rgb(55, 0, 252);
+.myWork .button:hover{
+  background-color: #C5F9EC;
+  color: black;
+  border: solid black;
   ;
 }
 
@@ -347,25 +346,16 @@ h1{
 }
 
 footer .button {
-  box-sizing: border-box;
-  display: inline-block;
+
   background-color: rgb(55, 0, 252);
-  border: black;
   color: white;
-  font-family: 'Sen', sans-serif;
-  border: 5px solid #000000;
-  border-radius: 20px;
-  padding: 8px 40px;
-  text-align: center;
-  margin: auto;
-  text-decoration: none;
-  font-size: 16px;
-  width: 222px;
-  height: 47px;
-  font-variant-caps: normal;
-  cursor: pointer;
+ 
 }
 
+footer .button:hover{
+ opacity: 0.7;
+  
+}
 
 /* Medium screens 
 @media only screen and (max-width: 1000px) {
