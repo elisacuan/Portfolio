@@ -1,4 +1,30 @@
+body{
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: auto 1fr auto;
+  grid-template-areas: 'header'
+  'hero'
+  'skills'
+  'myWork'
+  'footer';
+}
 
+.header{
+  grid-area: header;
+}
+.hero{
+  grid-area: hero;
+}
+.skills
+{
+  grid-area: skills;
+}
+.myWork{
+  grid-area: myWork;
+}
+.footer{
+  grid-area: footer;
+}
 
 /*Nav Bar*/ 
 
@@ -37,10 +63,10 @@
   
 }
 
-/* Medium screens */
+/* Medium screens 
 @media all and (max-width: 800px) {
   .navigation {
-    /* When on medium sized screens, we center it by evenly distributing empty space around items */
+     When on medium sized screens, we center it by evenly distributing empty space around items 
     justify-content: space-around;
   }
   .footer {
@@ -48,16 +74,16 @@
   }
 }
 
-/* Small screens */
+/* Small screens 
 @media all and (max-width: 500px) {
   .navigation {
-    /* On small screens, we are no longer using row direction but column */
+    On small screens, we are no longer using row direction but column 
     flex-direction: column;
   }
   .footer {
 
   }
-}
+}*/
   
 
 /*Body*/
