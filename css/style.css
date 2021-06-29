@@ -35,7 +35,6 @@ body{
   padding: 0px;
   justify-content: flex-end;
   height:fit-content;
-
 }
 
 .navigation a {
@@ -54,36 +53,13 @@ body{
 
 .decorated {
   font-weight: bold;
+  background-color: rgb(230, 230, 46);
 }
 
 .navigation div{
   flex-grow: 1;
   background-color: white;
-
-  
 }
-
-/* Medium screens 
-@media all and (max-width: 800px) {
-  .navigation {
-     When on medium sized screens, we center it by evenly distributing empty space around items 
-    justify-content: space-around;
-  }
-  .footer {
-    
-  }
-}
-
-/* Small screens 
-@media all and (max-width: 500px) {
-  .navigation {
-    On small screens, we are no longer using row direction but column 
-    flex-direction: column;
-  }
-  .footer {
-
-  }
-}*/
   
 
 /*Body*/
@@ -382,3 +358,25 @@ footer .button {
   font-variant-caps: normal;
   cursor: pointer;
 }
+
+
+/* Medium screens 
+@media only screen and (max-width: 1000px) {
+  .navigation {
+    justify-content: space-around;
+  }
+  .footer {
+    
+  }
+}
+
+/* Small screens 
+@media all and (max-width: 500px) {
+  .navigation {
+    On small screens, we are no longer using row direction but column 
+    flex-direction: column;
+  }
+  .footer {
+
+  }
+}*/
