@@ -109,7 +109,7 @@ h1{
   grid-area: skills;
   display: grid;
   width: 1440px;
-  height: 900px;
+  height: 700px;
   border: 15px;
   border-bottom: 5px solid black;
   margin: auto;
@@ -355,12 +355,15 @@ footer .button:hover{
 }
 
 /* Medium screens */
-@media only screen and (max-width: 1000px) {
-  .navigation {
-    
-  }
-  .footer {
-    
+@media (max-width: 700px) {
+  .myWork {
+    grid-template-areas: "myworktitle"
+    "work2"
+    "work2desc"
+    "work3"
+    "work3desc"
+    "work4" 
+    "work4desc";
   }
 }
 
