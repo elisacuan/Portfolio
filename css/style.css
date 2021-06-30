@@ -196,8 +196,6 @@ h1{
 
 }
 
-
-
 .myworktitle{
   display: grid;
   grid-area: myworktitle;
@@ -363,7 +361,8 @@ footer .button:hover{
     "work3desc"
     "work4" 
     "work4desc";
-  }}
+  }
+}
 
  
  
