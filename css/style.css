@@ -351,10 +351,9 @@ footer .button:hover{
  opacity: 0.7;
 }
 
-/* Medium screens */
 
-
- @media screen and (max-width: 320px) {
+ @media screen and (max-device-width: 300px) {
+ 
   .myWork {
     grid-template-columns: 1fr;
     grid-template-areas: "myworktitle"
@@ -364,7 +363,7 @@ footer .button:hover{
     "work3desc"
     "work4" 
     "work4desc";
-  }
-}
+  }}
+
  
  
