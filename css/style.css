@@ -355,7 +355,7 @@ footer .button:hover{
  @media screen and (max-device-width: 600px) {
  
   .hero{
-    width: 1000px;
+    width: 1200px;
     height: 800px;
     border: 15px;
     padding: 200px;
@@ -405,7 +405,7 @@ footer .button:hover{
   .skills{
     grid-area: skills;
     display: grid;
-    width: 1000px;
+    width: 1200px;
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
