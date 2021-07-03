@@ -36,7 +36,7 @@ body{
   flex-wrap: wrap;
 }
 
-.navwrap{
+.navitem{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -73,11 +73,12 @@ body{
   margin: auto;
   border-bottom: 5px solid black ;
 }
-.hero u{
+.hero .selectoranim{
   background-color: rgb(138, 50, 211);
   color: white;
   text-decoration: none;
 }
+
 
 h1{
   font-family: 'Roboto Slab', serif;
@@ -221,7 +222,7 @@ h1{
 .work2{
   grid-area: work2;
   padding-top: 50px;
-    margin: 40px;
+  margin: 40px;
 }
 
 .work2desc{
@@ -266,6 +267,7 @@ h1{
   margin: 40px;
   align-items:flex-start;
   justify-content: left;
+  margin-bottom: 150px;
 
 }
 
@@ -350,8 +352,17 @@ footer .button:hover{
 }
 
 
- @media screen and (max-device-width: 300px) {
+ @media screen and (max-device-width: 600px) {
  
+  .hero{
+    width: 1000px;
+    height: 800px;
+    border: 15px;
+    padding: 200px;
+    margin: auto;
+    border-bottom: 5px solid black ;
+  }
+
   .myWork {
     grid-template-columns: 1fr;
     grid-template-areas: "myworktitle"
@@ -362,6 +373,54 @@ footer .button:hover{
     "work4" 
     "work4desc";
   }
+
+  .webimage{
+    width:700px;
+    height: 520px;
+  }
+
+  .myWork h4{
+    width: 700px;
+    height: 50px;
+  }
+  
+  .myWork h2{
+    padding-left: 220px;
+  }
+  .myWork p{
+    width: 700px;
+    height: 100px;
+  
+  }
+
+  .mobileimg{
+    height: 570px;
+    margin: auto;
+  }
+
+  .navigation{
+   justify-content: stretch;
+  }
+
+  .skills{
+    grid-area: skills;
+    display: grid;
+    width: 1000px;
+    height: auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: auto;
+    grid-template-areas: "intro" 
+    "productdesign" 
+    "visualdesign";
+  }
+
+  .skills img{
+    width: 8%;
+    height: auto;
+    padding-left: 20px;
+  }
+  
+
 }
 
  

@@ -10,19 +10,20 @@
 
   <title>Elisa Cuan - UX Portfolio</title>
 </head>
-<body>
+<body onload="uanim()">
   <header class="header">
       <div class="navigation">
-        <a href="#" class="logo"><img src="images/logowhite.png"></a>
-        <div class="navwrap">
+       <a href="#" class="logo"><img src="images/logowhite.png"></a>
+      <div class="navitem">
         <a class="navbutton" href="#">LinkedIn</a>
-        <a class="navbutton decorated" href="#">Contact</a></div>
+        <a class="navbutton decorated" href="#">Contact</a>
+      </div>
     </div> 
   </header> 
 
   <div class="hero">
     <h1>
-      👋 I am Elisa Cuan. <br> User Experience <u>Designer.</u></h1> 
+      👋 I am Elisa Cuan. <br> User Experience <u class="selectoranim">Designer.</u></h1> 
       <br> 
     <p>Nothing lights me up more than creating a solution that changes people’s lives.</p>
   </div>
@@ -102,5 +103,7 @@
   </div>
   </div>
 </footer>
+<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+<script src="js/index.js"></script>  
 </body>
 </html>
