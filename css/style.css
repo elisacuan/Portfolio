@@ -79,6 +79,24 @@ body{
   text-decoration: none;
 }
 
+.wave{
+  animation: rotation 2s infinite linear;
+  height: 60px;
+  width: 60px;
+}
+
+@keyframes rotation {
+  0% {
+    transform: rotate(45deg);
+  }
+  50% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(45deg);
+  }
+}
+
 
 h1{
   font-family: 'Roboto Slab', serif;
@@ -306,8 +324,10 @@ h1{
   background-color: #C5F9EC;
   color: black;
   border: solid black;
-  ;
+  
 }
+
+
 
 /*Footer*/
 .footer{
@@ -423,5 +443,5 @@ footer .button:hover{
 
 }
 
- 
+
  

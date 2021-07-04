@@ -2,4 +2,7 @@
 //$(".selectoranim").on("click", function(){
   // });
 
-
+ 
+$(function() {
+  $(".wave").animate({transform: '+=rotate(-90deg)'});
+});
