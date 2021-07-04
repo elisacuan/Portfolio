@@ -63,7 +63,9 @@ body{
 }
 
 .navbutton:hover{
+  font-weight: bold;
   text-decoration: underline;
+ 
 }
 
 .decorated:hover{
@@ -83,8 +85,19 @@ body{
   border-bottom: 5px solid black ;
 }
 .hero .selectoranim{
-  background-color: rgb(138, 50, 211);
+ /* background-color: rgb(138, 50, 211);*/
   color: white;
+  background: radial-gradient(
+    hsl(245 75% 50%), 
+    hsl(310 75% 50%) 
+  ) fixed;
+  background: conic-gradient(
+    hsl(195 75% 50%), 
+    hsl(300 75% 50%), 
+    hsl(170 75% 60%)
+  ) fixed; 
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
   text-decoration: none;
 }
 
@@ -156,6 +169,17 @@ h1{
   font-size: 30px;
   text-align: left;
   padding-left: 20px;
+  background: radial-gradient(
+    hsl(170 75% 50%), 
+    hsl(300 75% 50%) 
+  ) fixed;
+  background: conic-gradient(
+    hsl(170 75% 50%), 
+    hsl(300 75% 50%), 
+    hsl(170 75% 60%) 
+  ) fixed;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .skills p{
