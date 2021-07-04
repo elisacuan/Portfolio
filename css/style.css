@@ -36,6 +36,10 @@ body{
   flex-wrap: wrap;
 }
 
+.navigation .logo{
+  padding: 10px;
+}
+
 .navitem{
   display: flex;
   justify-content: center;
@@ -86,7 +90,7 @@ body{
 }
 .hero .selectoranim{
  /* background-color: rgb(138, 50, 211);*/
-  color: white;
+  color: black;
   background: radial-gradient(
     hsl(245 75% 50%), 
     hsl(310 75% 50%) 
