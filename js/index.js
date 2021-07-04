@@ -1,8 +1,26 @@
-// Create event listener to enter items below
-//$(".selectoranim").on("click", function(){
-  // });
+
+// Hover over web work image
 
  
-$(function() {
-  $(".wave").animate({transform: '+=rotate(-90deg)'});
-});
+$('.overlay').hover(function(){
+    $(this).css('opacity','.8');
+  }, 
+  function () {
+    $(this).css('opacity','0');  
+  });
+
+// Hover over mobile work image
+
+  $('.overlaymobile').hover(function(){
+    $(this).css('opacity','.8');
+  }, 
+  function () {
+    $(this).css('opacity','0');  
+  });
+
+  $('.overlaymobile2').hover(function(){
+    $(this).css('opacity','.8');
+  }, 
+  function () {
+    $(this).css('opacity','0');  
+  });

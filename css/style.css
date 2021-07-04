@@ -62,6 +62,15 @@ body{
   background-color: #C5F9EC;
 }
 
+.navbutton:hover{
+  text-decoration: underline;
+}
+
+.decorated:hover{
+  background-color: rgb(138, 50, 211);
+  color: #f6f8f8;
+}
+
 
 /*Body*/
 
@@ -208,10 +217,11 @@ h1{
 
 .myWork p{
   font-family: 'Sen', sans-serif;
-  font-size: 24px;
+  font-size: 20px;
   text-align: left;
   width: 520px;
   height: 100px;
+  color: #8A837F;
 
 }
 
@@ -221,26 +231,12 @@ h1{
   justify-self: flex-start;  
 }
 
-/*.work1{
-  grid-area: work1;
-  padding: 20px;
-  margin: 40px;
-}
-
-.work1desc{
-  display: grid;
-  grid-area: work1desc;
-  padding: 20px;
-  margin: 40px;
-  align-items:flex-start;
-  justify-content: center;
-
-}*/
 
 .work2{
   grid-area: work2;
-  padding-top: 50px;
   margin: 40px;
+  padding-top: 50px;
+  position: relative;
 }
 
 .work2desc{
@@ -256,6 +252,7 @@ h1{
   grid-area: work3;
   padding: 20px;
   margin: 40px;
+  position: relative;
 
 }
 
@@ -264,7 +261,6 @@ h1{
   grid-area: work3desc;
   padding: 20px;
   margin: 40px;
-  border:10px;
   align-items:flex-start;
   justify-content: left;
 
@@ -275,6 +271,7 @@ h1{
   grid-area: work4;
   padding: 20px;
   margin: 40px;
+  position: relative;
 
 }
 
@@ -294,11 +291,93 @@ h1{
   height: 290px;
 }
 
+.overlay {
+  position: absolute;
+  top: 50px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width:400px;
+  height: 290px;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+  background-color: #f6f8f8;
+  cursor: pointer;
+}
+
 .mobileimg{
   padding-top: 20px;
   height: 370px;
   margin: auto;
 }
+
+.overlaymobile {
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width:245px;
+  height: 370px;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+  background-color: #f6f8f8;
+  cursor: pointer;
+}
+
+.overlaymobile2 {
+  position: absolute;
+  top: 30px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  width:245px;
+  height: 370px;
+  opacity: 0;
+  transition: .5s ease;
+  border-radius: 10px;
+  background-color: #f6f8f8;
+  cursor: pointer;
+}
+
+.overlay p{
+  color: rgb(14, 10, 10);
+  font-size: 20px;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlaymobile p{
+  color: rgb(14, 10, 10);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.overlaymobile2 p{
+  color: rgb(14, 10, 10);
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
 
 .button {
   box-sizing: border-box;
