@@ -24,3 +24,15 @@ $('.overlay').hover(function(){
   function () {
     $(this).css('opacity','0');  
   });
+
+  //scroll reveal
+
+  ScrollReveal().reveal('.skills', { delay: 600 });
+  ScrollReveal().reveal('.intro', { delay: 700 });
+  ScrollReveal().reveal('.prodcutdesign', { delay: 700 });
+  ScrollReveal().reveal('.visualdesign', { delay: 800 });
+  ScrollReveal().reveal('.myWork', { delay: 900 });
+  ScrollReveal().reveal('.work2', { delay: 1000 });
+  ScrollReveal().reveal('.work3', { delay: 1100 });
+  ScrollReveal().reveal('.work4', { delay: 1100 });
+
