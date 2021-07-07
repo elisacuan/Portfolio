@@ -479,7 +479,7 @@ footer .button:hover{
 }
 
 
- @media screen and (max-device-width: 600px) {
+ @media screen and (max-width: 900px) {
  
   .hero{
     width: 1200px;
