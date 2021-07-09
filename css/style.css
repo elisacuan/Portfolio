@@ -90,6 +90,7 @@ body{
   margin: auto;
   border-bottom: 5px solid black ;
 }
+
 .hero .selectoranim{
  /* background-color: rgb(138, 50, 211);*/
   color: black;
@@ -483,8 +484,17 @@ footer .button:hover{
 
  @media screen and (max-width: 900px) {
 
-  
+  .hero{
+    width: auto;
+    height: 520px;
+    margin: 10px;
+    padding: 0px;
+  }
+
   .myWork {
+    padding-left: 20px;
+    align-content: space-around;
+    justify-items: flex-start;
     grid-template-columns: 1fr;
     grid-template-areas: "myworktitle"
     "work2"
@@ -496,8 +506,8 @@ footer .button:hover{
   }
 
   .webimage{
-    width:700px;
-    height: 520px;
+    width:400px;
+    height: 290px;
   }
 
   .myWork h4{
@@ -506,7 +516,8 @@ footer .button:hover{
   }
   
   .myWork h2{
-    padding-left: 220px;
+    text-align: left;
+    padding-left: 20px;
   }
   .myWork p{
     width: 700px;
@@ -515,7 +526,7 @@ footer .button:hover{
   }
 
   .mobileimg{
-    height: 570px;
+    height: 370px;
     margin: auto;
   }
 
@@ -524,6 +535,7 @@ footer .button:hover{
   }
 
   .skills{
+    margin: 0px;
     grid-area: skills;
     display: grid;
     width: 1200px;
