@@ -483,12 +483,29 @@ footer .button:hover{
 
 
  @media screen and (max-width: 900px) {
+  .navitem{
+    display: flex;
+  /*  justify-content: center;
+    align-items: center;*/
+    margin-right: 560px;
+    margin-left: auto;
+  }
 
   .hero{
-    width: auto;
+    width: 720px;
     height: 520px;
     margin: 10px;
     padding: 0px;
+    border-bottom: 0 ;
+  }
+
+  .hero h1{
+    position: absolute;
+  }
+
+  .hero p{
+    top: 40%;
+    position: absolute;
   }
 
   .myWork {
@@ -538,7 +555,7 @@ footer .button:hover{
     margin: 0px;
     grid-area: skills;
     display: grid;
-    width: 1200px;
+    width: 920px;
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
