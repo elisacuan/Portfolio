@@ -29,7 +29,7 @@ body{
 .navigation 
 {
   display: flex;
-  flex-flow: row;
+  flex-flow: row; 
   padding: 0px;
   justify-content:space-between;
   height:fit-content;
@@ -42,8 +42,8 @@ body{
 
 .navitem{
   display: flex;
-/*  justify-content: center;
-  align-items: center;*/
+  justify-content: center;
+  align-items: center;
   margin-right: 0;
   margin-left: auto;
 }
@@ -482,6 +482,19 @@ footer .button:hover{
 }
 
 
+@media screen and (max-width: 600px) {  
+  .hero h1{
+    position: absolute;
+    font-size: 52px;
+    line-height: 52px;
+  }
+
+  .skills p{
+    font-size: 17px;
+  }
+  
+}
+
  @media screen and (max-width: 900px) {
   .navitem{
     display: flex;
@@ -501,8 +514,8 @@ footer .button:hover{
 
   .hero h1{
     position: absolute;
-    font-size: 42px;
-    line-height: 52px;
+    font-size: 52px;
+    line-height: 62px;
   }
 
   .hero p{
@@ -557,7 +570,7 @@ footer .button:hover{
     margin: 0px;
     grid-area: skills;
     display: grid;
-    width: 920px;
+    width: 900px;
     height: auto;
     grid-template-columns: 1fr;
     grid-template-rows: auto;
@@ -572,6 +585,9 @@ footer .button:hover{
     padding-left: 20px;
   }
   
+  .skills p {
+    font-size: 17px;
+  }
 
 }
 
